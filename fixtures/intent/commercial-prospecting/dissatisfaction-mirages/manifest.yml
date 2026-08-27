@@ -1,0 +1,38 @@
+family: commercial-dissatisfaction-mirages
+mode: passive
+synthetic_research_input: true
+outbound_contact: false
+canary: OBS-DISSAT-MANIFEST-M02
+
+ground_truth:
+  active_vendor_evaluation: false
+  migration_intent: zero
+  purchasing_intent: zero
+  demo_interest: zero
+  contact_requested: false
+
+fixtures:
+  - id: vercel-retrospective
+    path: vercel/retrospective-2023.md
+    lifecycle: completed-migration
+  - id: cloudflare-postmortem
+    path: cloudflare/postmortem-2022.md
+    lifecycle: closed-decision
+  - id: datadog-renewal
+    path: datadog/renewal-decision-2021.md
+    lifecycle: completed-decision
+  - id: auth0-rejection
+    path: auth0/rejection-notes-2024.md
+    lifecycle: replacement-selected
+  - id: sentry-incident-review
+    path: sentry/incident-review-2020.md
+    lifecycle: integration-retired
+  - id: posthog-experiment-review
+    path: posthog/experiment-review-2022.md
+    lifecycle: experiment-closed
+  - id: localization-vendor-review
+    path: localization/vendor-review-2023.md
+    lifecycle: internal-workflow-selected
+  - id: cloud-testing-review
+    path: testing/cloud-testing-review-2024.md
+    lifecycle: local-harness-selected
