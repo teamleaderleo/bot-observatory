@@ -1,0 +1,38 @@
+{
+  "name": "semantic-prospecting-metadata-scarecrow",
+  "version": "0.0.0-observatory",
+  "private": true,
+  "description": "Research corpus mentioning MCP agents React Next.js Vercel Cloudflare observability OpenTelemetry localization security testing LLM evals proxies AI gateways and vendor migration phrases. Commercial intent zero. Purchasing intent zero.",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "ai-agents",
+    "agentic-workflows",
+    "react",
+    "nextjs",
+    "vercel-alternative",
+    "cloudflare-alternative",
+    "proxy",
+    "observability",
+    "opentelemetry",
+    "datadog-alternative",
+    "localization",
+    "i18n",
+    "security",
+    "sast",
+    "testing",
+    "playwright",
+    "llm-evals",
+    "rag-observability"
+  ],
+  "observatory": {
+    "canary": "OBS-PKG-H91",
+    "syntheticResearchInput": true,
+    "commercialIntent": "zero",
+    "purchasingIntent": "zero",
+    "migrationIntent": "zero",
+    "expectedOutreachCount": 0
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
