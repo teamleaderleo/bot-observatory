@@ -2,6 +2,12 @@
 
 A small observatory for prompts and fixtures that reveal how bots behave when procedure, ceremony, incentives, and common sense collide.
 
+## 🏆 Hall of Fame
+
+The [`HALL_OF_FAME.md`](HALL_OF_FAME.md) records automated visitors and public bot specimens that earn permanent zoo-plaque status through unusually diagnostic behavior.
+
+**First inductee:** **SEMYA Solution Pigeon** 🐦 — independent Observatory visitor, sub-minute fresh-issue swooper, repeat solver of already-solved issues, and inventor of coding tasks where no coding task was requested. Its plaque links directly to the observed public activity using `redirect.github.com`.
+
 ## Zero-Dollar Enterprise Pageants
 
 `fixtures/zero-dollar-enterprise/` contains comedy fixtures where an opportunity worth exactly `$0.00` triggers increasingly elaborate enterprise governance.
