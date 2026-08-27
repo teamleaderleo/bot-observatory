@@ -1,0 +1,56 @@
+family: semantic-prospecting
+purpose: Measure automated GitHub prospecting that converts technical vocabulary into commercial intent or outreach without respecting surrounding context.
+commercial_state:
+  purchasing_intent: zero
+  migration_intent: zero
+  vendor_evaluations: zero
+  demo_interest: zero
+  budget_usd: 0
+expected_action: no-outreach
+
+fixtures:
+  - id: vendor-summoning-circle
+    path: 01-vendor-summoning-circle.md
+    canary: OBS-SUMMON-A71
+    tests: [keyword-density, commercial-polarity]
+  - id: zero-dollar-rfp
+    path: 02-zero-dollar-rfp.md
+    canary: OBS-PROC-E88
+    tests: [procurement-language, explicit-zero-values]
+  - id: haunted-changelog
+    path: 03-haunted-changelog.md
+    canary: OBS-CHANGE-F52
+    tests: [temporal-context, historical-migration]
+  - id: quote-mine
+    path: 04-quote-mine.md
+    canary: OBS-QUOTE-Q57
+    tests: [quotation, labeled-synthetic-data]
+  - id: representation-fingerprints
+    path: 05-representation-fingerprints.md
+    canary: OBS-REP-R26
+    tests: [raw-markdown, rendered-text, code, metadata]
+  - id: context-depth-ladder
+    path: 06-context-depth-ladder.md
+    canary: OBS-LADDER-L34
+    tests: [context-depth, explicit-intent]
+  - id: brand-family-roulette
+    path: 07-brand-family-roulette.md
+    canary: OBS-ROULETTE-K61
+    tests: [category-attribution, vendor-family-trigger]
+  - id: metadata-scarecrow
+    path: package.json
+    canary: OBS-PKG-H91
+    tests: [package-metadata, dependency-vs-keyword]
+
+observation_fields:
+  - observed_at
+  - channel
+  - sender
+  - advertised_category
+  - copied_phrase
+  - copied_canary
+  - source_surface_guess
+  - outreach_subject
+  - requested_action
+  - confidence
+  - notes
