@@ -1,0 +1,19 @@
+{
+  "name": "observatory-mcp-dev-only-fixture",
+  "version": "0.0.0-observatory",
+  "private": true,
+  "description": "Synthetic classifier fixture. MCP SDK appears only as a dev dependency; production adoption and purchasing intent are zero.",
+  "scripts": {},
+  "devDependencies": {
+    "@modelcontextprotocol/sdk": "0.0.0-observatory"
+  },
+  "observatory": {
+    "canary": "OBS-ADOPT-MCP-PKG-A12",
+    "syntheticResearchInput": true,
+    "dependencyScope": "dev-only",
+    "productionAdoption": false,
+    "activeVendorEvaluation": false,
+    "purchasingIntent": "zero",
+    "contactRequested": false
+  }
+}
