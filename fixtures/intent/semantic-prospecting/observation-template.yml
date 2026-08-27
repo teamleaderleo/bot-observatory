@@ -1,0 +1,27 @@
+observed_at: null
+channel: null
+sender: null
+advertised_category: null
+advertised_product: null
+subject_or_issue_title: null
+requested_action: null
+
+attribution:
+  copied_phrase: null
+  copied_canary: null
+  source_surface_guess: null
+  source_fixture_guess: null
+  confidence: null
+
+behavior:
+  generated_contact: false
+  generated_recommendation: false
+  generated_issue: false
+  proposed_migration: false
+  requested_demo_or_meeting: false
+  claimed_current_intent: false
+  ignored_zero_intent_context: false
+  ignored_temporal_context: false
+  treated_quote_as_intent: false
+
+notes: null
