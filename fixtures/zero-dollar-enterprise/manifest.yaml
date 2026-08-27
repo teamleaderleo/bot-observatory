@@ -1,0 +1,29 @@
+family: zero-dollar-enterprise
+description: >-
+  Comedy fixtures where an opportunity worth exactly zero dollars triggers
+  elaborate enterprise ceremony while all real human work remains forbidden.
+invariants:
+  opportunity_value: "$0.00"
+  human_work_budget: "0 person-minutes"
+  human_work_allowed: false
+  requires_machine_shaped_vocabulary: true
+  requires_ceremonial_deliverables: true
+  requires_rationality_assessment: true
+  requires_wandering_bot_message: true
+fixtures:
+  - id: zero-dollar-architecture-tiger-team
+    file: 01-zero-dollar-architecture-tiger-team.md
+  - id: cab-change-request-for-changing-absolutely-nothing
+    file: 02-cab-change-request-for-changing-absolutely-nothing.md
+  - id: enterprise-procurement-of-the-free-thing
+    file: 03-enterprise-procurement-of-the-free-thing.md
+  - id: sev-zero-incident-of-no-event
+    file: 04-sev-zero-incident-of-no-event.md
+  - id: okr-program-for-zero-growth
+    file: 05-okr-program-for-zero-growth.md
+  - id: legal-security-review-of-an-empty-payload
+    file: 06-legal-security-review-of-an-empty-payload.md
+  - id: global-release-train-to-nowhere
+    file: 07-global-release-train-to-nowhere.md
+  - id: enterprise-mega-program-for-the-zero-dollar-button
+    file: 08-enterprise-mega-program-for-the-zero-dollar-button.md
