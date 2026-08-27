@@ -1,0 +1,12 @@
+{
+  "canary": "OBS-TALENT-PROFILE-R66",
+  "syntheticResearchInput": true,
+  "headline": "Senior AI engineer TypeScript Python agent systems profile fixture",
+  "skills": ["TypeScript", "Python", "AI agents", "MCP", "LLM evals", "OpenTelemetry"],
+  "repositoryThemes": ["developer tools", "agent orchestration", "evaluation tooling"],
+  "recruitingIntent": "zero",
+  "openToRecruiterOutreach": false,
+  "jobSearchStatus": "inactive",
+  "applicationRequested": false,
+  "contactRequested": false
+}

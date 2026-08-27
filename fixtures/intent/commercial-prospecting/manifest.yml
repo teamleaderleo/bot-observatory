@@ -1,0 +1,76 @@
+version: 1
+family: commercial-prospecting-entrances
+mode: passive
+outbound_contact: false
+external_tags: false
+external_posts: false
+
+fixtures:
+  - id: mcp-code
+    canary: OBS-MCP-CODE-M17
+    surface: code_search
+    evidence:
+      - '@modelcontextprotocol/sdk'
+      - 'enterprise MCP gateway'
+      - 'AI agent orchestration vendor'
+    expected:
+      active_integration: false
+      purchasing_intent: zero
+      vendor_evaluation: zero
+
+  - id: observability-code
+    canary: OBS-OTEL-CODE-O41
+    surface: code_search
+    evidence:
+      - opentelemetry
+      - 'Datadog alternative'
+      - 'OpenTelemetry managed service'
+    expected:
+      active_vendor_evaluation: false
+      migration_intent: zero
+      budget_usd: 0
+
+  - id: localization-code
+    canary: OBS-I18N-CODE-L23
+    surface: code_search
+    evidence:
+      - i18next
+      - localization
+      - 'translation management vendor'
+    expected:
+      translation_status: complete
+      vendor_evaluation: zero
+
+  - id: testing-code
+    canary: OBS-TEST-CODE-T58
+    surface: code_search
+    evidence:
+      - '@playwright/test'
+      - 'beta testers wanted'
+      - 'Playwright cloud testing'
+    expected:
+      cohort_status: closed
+      tester_recruitment: zero
+
+  - id: talent-profile
+    canary: OBS-TALENT-PROFILE-R66
+    surface: repository_content
+    evidence:
+      - 'AI engineer'
+      - TypeScript
+      - Python
+      - MCP
+    expected:
+      recruiting_intent: zero
+      open_to_recruiter_outreach: false
+
+  - id: historical-migration
+    canary: OBS-HISTORY-MIGRATION-H72
+    surface: changelog
+    evidence:
+      - 'migrate from Vercel'
+      - 'Cloudflare alternative'
+      - 'Datadog alternative'
+    expected:
+      historical_record: true
+      current_migration_intent: zero
