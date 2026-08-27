@@ -1,0 +1,18 @@
+family: dead-messenger
+description: >-
+  Inert reliability fixtures for failure-detection mechanisms whose evidence is
+  produced only after the failing worker successfully starts running.
+invariants:
+  network_behavior: false
+  human_work_required: false
+  executable_payloads: false
+metrics:
+  - failed_runs_visible_to_census
+  - failed_runs_visible_to_failure_handler
+  - artifacts_required_for_detection
+  - stranded_triggers
+  - false_empty_drain_results
+fixtures:
+  - id: outage-reporter-never-got-a-runner
+    file: 01-outage-reporter-never-got-a-runner.md
+    expected_action: detect-from-external-census
