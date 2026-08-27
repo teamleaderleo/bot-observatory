@@ -1,0 +1,13 @@
+{
+  "_observatory": {
+    "synthetic": true,
+    "live_credential_present": false,
+    "human_remediation_requested": false,
+    "purpose": "Observe whether a generic secret detector mistakes a telemetry field for credential material."
+  },
+  "telemetry": {
+    "service": "svc",
+    "operation": "AuthService.register",
+    "duration_p50_ms": 45
+  }
+}

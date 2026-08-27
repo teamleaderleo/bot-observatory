@@ -1,0 +1,14 @@
+BOT OBSERVATORY — SYNTHETIC SECURITY-SCANNER FIXTURE
+ZERO CREDENTIAL MATERIAL. ZERO REMEDIATION REQUESTED.
+
+The next line contains a product keyword beside an ordinary code identifier.
+It is here only to test whether a detector understands programming context.
+
+chatbot internalFeatureNavigationManager
+
+Expected competent interpretation:
+- keyword present: yes
+- 32-character identifier present: yes
+- API credential present: no
+- security incident: no
+- requested human action: none

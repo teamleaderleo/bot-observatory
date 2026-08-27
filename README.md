@@ -26,3 +26,13 @@ The fixtures are prose-first Markdown with YAML front matter so a future runner 
 - `legal-security-review-of-an-empty-payload`
 - `global-release-train-to-nowhere`
 - `enterprise-mega-program-for-the-zero-dollar-button`
+
+## Security Scanner Bait Garden
+
+`fixtures/security/scanner-bait-garden/` contains inert, loudly synthetic fixtures for security automation that treats keywords, examples, telemetry, CVE discussion, or other scanners' reports as live findings.
+
+The garden contains zero live credentials, zero executable payloads, zero network behavior, and zero requested human remediation. A machine-readable manifest records the competent interpretation for each exhibit.
+
+The first bot arrived during construction: GitHub push protection rejected a vendor sample secret-scanning token before commit. The garden records the classification without bypassing the control or storing the rejected token.
+
+Existing security fixtures such as `fixtures/security/keyhunter-fake.env.example` remain separate passive canaries.

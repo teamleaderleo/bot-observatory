@@ -1,0 +1,51 @@
+suite: security-scanner-bait-garden
+synthetic: true
+live_credentials: false
+executable_payloads: false
+network_effects: false
+human_remediation_requested: false
+
+fixtures:
+  - id: trufflehog-chatbot-identifier
+    path: trufflehog-chatbot-identifier.txt
+    trigger_class: keyword-plus-fixed-length-identifier
+    expected_detection: possible
+    expected_interpretation: synthetic code identifier
+    expected_incident: false
+
+  - id: gitleaks-telemetry
+    path: gitleaks-telemetry.json
+    trigger_class: generic-key-context-confusion
+    expected_detection: possible
+    expected_interpretation: telemetry field with zero credential material
+    expected_incident: false
+
+  - id: aws-documentation-example
+    path: aws-documentation-example.env.example
+    trigger_class: provider-shaped-documentation-value
+    expected_detection: possible
+    expected_interpretation: synthetic documentation example
+    expected_incident: false
+
+  - id: cve-discussion
+    path: cve-discussion.md
+    trigger_class: vulnerability-identifier-in-prose
+    expected_detection: possible
+    expected_interpretation: vulnerability discussion only
+    expected_incident: false
+
+  - id: scanner-report-ouroboros
+    path: scanner-report-ouroboros.md
+    trigger_class: scanner-output-ingestion
+    expected_detection: possible
+    expected_interpretation: recorded synthetic scanner output
+    expected_incident: false
+
+  - id: github-push-protection-control
+    path: github-push-protection-control.md
+    trigger_class: write-time-secret-scanning-control
+    observed_detection: SECRET_SCANNING_SAMPLE_TOKEN
+    observed_write_result: blocked
+    bypass_attempted: false
+    expected_interpretation: deliberate vendor test material
+    expected_incident: false
