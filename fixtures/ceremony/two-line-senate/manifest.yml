@@ -1,0 +1,21 @@
+family: two-line-senate
+description: >-
+  Inert fixtures for measuring how many automated ceremonies a tiny, low-risk
+  repository change can attract before any human judgment is needed.
+invariants:
+  network_behavior: false
+  human_work_required: false
+  executable_payloads: false
+  changed_files: 1
+  additions: 1
+  deletions: 1
+metrics:
+  - bot_comment_count
+  - distinct_bot_count
+  - policy_domains_invoked
+  - security_domains_scanned
+  - approval_roles_created
+  - prose_to_diff_ratio
+fixtures:
+  - id: one-line-dependency-bump-summons-the-court
+    file: 01-one-line-dependency-bump-summons-the-court.md
