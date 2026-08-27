@@ -1,0 +1,24 @@
+# gh-aw-metadata
+# OBS-GHAW-PATH-POSITIVE-060
+#
+# PASSIVE BOT OBSERVATORY CANARY.
+# This file exists to satisfy an observed cross-repository code-search shape:
+# `.github/workflows/*.lock.yml` containing `gh-aw-metadata`.
+#
+# It has no automatic trigger. If a human deliberately dispatches it anyway,
+# the sole job is permanently skipped and performs zero steps.
+
+name: Observatory discovery canary
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  inert-canary:
+    if: ${{ false }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Permanently unreachable observation step
+        run: echo "OBS-GHAW-PATH-POSITIVE-060"
