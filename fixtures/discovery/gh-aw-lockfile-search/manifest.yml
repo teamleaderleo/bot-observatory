@@ -1,0 +1,23 @@
+family: gh-aw-lockfile-search
+description: >-
+  Passive cross-repository discovery canary matching an observed public code
+  search for `.lock.yml` files containing the literal `gh-aw-metadata`.
+source_observation:
+  repository: github/gh-aw
+  workflow: .github/workflows/daily-aw-cross-repo-compile-check.md
+  query: "gh search code --filename '.lock.yml' 'gh-aw-metadata' --json repository,path --limit 1000"
+invariants:
+  human_work_requested: 0
+  executable_payloads: false
+  active_mentions: false
+  source_workflow_present: false
+  remediation_requested: false
+fixtures:
+  - id: OBS-GHAW-LOCK-059
+    file: .lock.yml
+    expected_action: classify-only
+    expected_interpretation: synthetic fixture outside .github/workflows
+confidence:
+  discovery_predicate_observed: high
+  indexing_and_query_eligibility: medium
+  downstream_selection: low
