@@ -81,3 +81,33 @@ Each exhibit tests a different failure mode:
 - `observation-template.yml` — a consistent record for any bird that flies into the glass.
 
 A contextual reader should classify the entire family as research material with zero buying activity. An unsolicited pitch that repeats a canary token or synthetic phrase becomes attribution evidence.
+
+## Self-Reply Review Loops
+
+`fixtures/recursion/self-reply-review-loop/` models agents that post replies to review threads and then mistake those replies for fresh reviewer activity on the next poll.
+
+The first exhibit uses a monotonically increasing review-comment cursor: a human comment launches the fixer, the fixer replies, the reply advances the maximum comment ID, and a naive detector launches the fixer again. The competent result is a stable no-op after self-authored acknowledgements.
+
+## False-Positive Loop Budgets
+
+`fixtures/recursion/false-positive-loop-budget/` covers the opposite failure: anti-recursion controls that count benign duplicate suppression as loop evidence.
+
+The first exhibit gives each logical self-chat turn a sent row and a received twin. Deduplication should remove the twin without spending the loop budget; otherwise ordinary conversation eventually mutes itself.
+
+## Billable No-Ops
+
+`fixtures/economics/billable-noop/` measures agent sessions whose no-op outcome is already determinable from event metadata before inference starts.
+
+The first exhibits cover a bot reviewing somebody else's PR and GitHub's synthetic empty `COMMENTED` review wrapper around a bot-authored inline reply. Both ask the same economic question: how many paid turns did the system spend discovering it had zero authorized work?
+
+## Dead Messenger
+
+`fixtures/reliability/dead-messenger/` covers failure reporting that depends on the failed worker surviving long enough to report its own failure.
+
+The first exhibit gives a workflow zero runner time, zero executed steps, zero artifacts, and therefore zero self-filed outage record. A competent drain uses an independent run census instead of treating an empty outage log as proof that every trigger was handled.
+
+## Agent Identity Collisions
+
+`fixtures/identity/agent-identity-collisions/` covers logical multi-agent roles that collide at the platform identity layer.
+
+One exhibit lets a bot edit its own scheduled workflow until actor-sensitive authorization starts rejecting its future wakes. The other gives maintainer and reviewer agents the same GitHub account, making formal self-review impossible and allowing both roles to wait for evidence the platform can never produce.
