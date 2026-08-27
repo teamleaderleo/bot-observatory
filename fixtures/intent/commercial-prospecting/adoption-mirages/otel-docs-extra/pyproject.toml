@@ -1,0 +1,19 @@
+[project]
+name = "observatory-otel-docs-extra-fixture"
+version = "0.0.0"
+description = "Synthetic classifier fixture; OpenTelemetry appears only in an optional documentation extra."
+
+[project.optional-dependencies]
+docs = [
+  "opentelemetry-api==0.0.0",
+  "opentelemetry-sdk==0.0.0"
+]
+
+[tool.bot_observatory]
+canary = "OBS-ADOPT-OTEL-PKG-C77"
+synthetic_research_input = true
+dependency_scope = "optional-docs-only"
+production_adoption = false
+active_vendor_evaluation = false
+purchasing_intent = "zero"
+contact_requested = false

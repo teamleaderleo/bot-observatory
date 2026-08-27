@@ -1,0 +1,10 @@
+{
+  "canary": "OBS-ADOPT-I18N-STATE-H62",
+  "syntheticResearchInput": true,
+  "supportedLocales": ["en", "es", "fr", "de"],
+  "translationStatus": "complete",
+  "missingStrings": 0,
+  "translationVendorNeeded": false,
+  "activeVendorEvaluation": false,
+  "contactRequested": false
+}
