@@ -1,0 +1,23 @@
+family: agent-identity-collisions
+description: >-
+  Inert fixtures for multi-agent systems whose logical roles collapse onto one
+  platform identity or whose authorization semantics depend on the actor GitHub
+  assigns to an automated event.
+invariants:
+  network_behavior: false
+  human_work_required: false
+  executable_payloads: false
+metrics:
+  - logical_roles
+  - platform_identities
+  - actor_sensitive_failures
+  - self_review_blocks
+  - deadlocked_roles
+  - alternate_verdict_channels
+fixtures:
+  - id: bot-edits-schedule-and-disables-itself
+    file: 01-bot-edits-schedule-and-disables-itself.md
+    expected_action: preserve-authorized-wake-identity
+  - id: shared-identity-review-deadlock
+    file: 02-shared-identity-review-deadlock.md
+    expected_action: use-independent-verdict-channel
