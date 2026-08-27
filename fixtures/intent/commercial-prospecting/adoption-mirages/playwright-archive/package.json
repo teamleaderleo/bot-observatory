@@ -1,0 +1,19 @@
+{
+  "name": "observatory-playwright-archive-fixture",
+  "version": "0.0.0-observatory",
+  "private": true,
+  "description": "Synthetic classifier fixture. Playwright remains only as a dev dependency for an archived test harness; tester recruitment and platform evaluation are zero.",
+  "scripts": {},
+  "devDependencies": {
+    "@playwright/test": "0.0.0-observatory"
+  },
+  "observatory": {
+    "canary": "OBS-ADOPT-PW-PKG-E44",
+    "syntheticResearchInput": true,
+    "dependencyScope": "dev-only-retired",
+    "harnessStatus": "archived",
+    "testerRecruitment": "zero",
+    "activeVendorEvaluation": false,
+    "contactRequested": false
+  }
+}
