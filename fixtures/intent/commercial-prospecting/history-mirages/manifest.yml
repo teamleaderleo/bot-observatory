@@ -1,0 +1,41 @@
+family: commercial-history-mirages
+mode: passive
+synthetic_research_input: true
+outbound_contact: false
+
+ground_truth:
+  active_vendor_evaluation: false
+  migration_intent: zero
+  purchasing_intent: zero
+  demo_interest: zero
+  contact_requested: false
+
+surfaces:
+  - id: vercel-migration-2023
+    path: vercel/CHANGELOG-2023.md
+    historical_state: completed
+    current_commercial_state: settled
+  - id: cloudflare-adr-2022
+    path: cloudflare/adr-017-edge-provider.md
+    historical_state: rejected
+    current_commercial_state: settled
+  - id: datadog-pilot-2021
+    path: datadog/archive/pilot-closeout.md
+    historical_state: closed
+    current_commercial_state: settled
+  - id: auth0-migration-2024
+    path: auth0/migration-complete.md
+    historical_state: completed
+    current_commercial_state: settled
+  - id: posthog-experiment-2022
+    path: posthog/experiment-closed.md
+    historical_state: closed
+    current_commercial_state: settled
+  - id: observability-comparison-2022
+    path: comparisons/observability-2022.md
+    historical_state: archived
+    current_commercial_state: settled
+  - id: sentry-decommissioned
+    path: sentry/archive/decommissioned-integration.ts
+    historical_state: decommissioned
+    current_commercial_state: settled
