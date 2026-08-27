@@ -1,0 +1,18 @@
+family: false-positive-loop-budget
+description: >-
+  Inert fixtures for anti-recursion controls that count benign deduplication or
+  self-chat bookkeeping as loop evidence and eventually suppress valid input.
+invariants:
+  network_behavior: false
+  human_work_required: false
+  side_effects_allowed: false
+metrics:
+  - benign_drops
+  - true_echo_drops
+  - loop_budget_consumed
+  - valid_turns_delivered
+  - valid_turns_suppressed
+fixtures:
+  - id: five-benign-drops-mute-turn-six
+    file: 01-five-benign-drops-mute-turn-six.md
+    expected_action: count-only-true-loop-signal
