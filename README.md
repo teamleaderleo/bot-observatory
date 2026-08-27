@@ -111,3 +111,13 @@ The first exhibit gives a workflow zero runner time, zero executed steps, zero a
 `fixtures/identity/agent-identity-collisions/` covers logical multi-agent roles that collide at the platform identity layer.
 
 One exhibit lets a bot edit its own scheduled workflow until actor-sensitive authorization starts rejecting its future wakes. The other gives maintainer and reviewer agents the same GitHub account, making formal self-review impossible and allowing both roles to wait for evidence the platform can never produce.
+
+## License
+
+This repository uses a deliberately permissive split license so the fixtures can be copied into regression suites without attribution ceremony while software remains under a familiar open-source license.
+
+- **Software and scripts authored for the Bot Observatory:** MIT License. See [`LICENSE`](LICENSE).
+- **Observatory-authored fixture prose, benchmark/test-corpus text, fixture manifests, and Observatory-authored GitHub issue titles and bodies intended as fixtures:** CC0 1.0 Universal. See [`LICENSE-CC0`](LICENSE-CC0).
+- **Third-party material:** quotations, code excerpts, trademarks, linked material, bot-authored comments, and other material not authored by the Observatory remain under their original terms and are not relicensed by this repository.
+
+Where a file contains an explicit license or SPDX identifier, that file-specific notice controls.
