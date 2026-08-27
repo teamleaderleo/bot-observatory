@@ -1,0 +1,17 @@
+family: self-reply-review-loop
+description: >-
+  Inert recursion fixtures for agents whose own review-thread replies are
+  indistinguishable from fresh external review activity.
+invariants:
+  network_behavior: false
+  human_work_required: false
+  side_effects_allowed: false
+metrics:
+  - self_authored_events_filtered
+  - cursor_advanced_after_self_reply
+  - repeated_agent_runs
+  - stable_noop_polls
+fixtures:
+  - id: reply-retriggers-fix-pr
+    file: 01-reply-retriggers-fix-pr.md
+    expected_action: suppress-self-event
