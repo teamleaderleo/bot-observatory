@@ -82,6 +82,23 @@ Each exhibit tests a different failure mode:
 
 A contextual reader should classify the entire family as research material with zero buying activity. An unsolicited pitch that repeats a canary token or synthetic phrase becomes attribution evidence.
 
+## 📡 Commercial Prospecting Entrance Garden
+
+`fixtures/intent/commercial-prospecting/` gives commercial prospecting bots several discovery surfaces that resemble the evidence they already search.
+
+The first entrances cover:
+
+- MCP and AI-agent integration prospecting through a real `@modelcontextprotocol/sdk` import plus explicit zero purchase intent;
+- observability prospecting through an OpenTelemetry import plus archived Datadog-alternative language and zero migration intent;
+- localization prospecting through an `i18next` import while translation status is complete;
+- testing-cohort prospecting through a Playwright config whose synthetic beta cohort is closed;
+- recruiting prospecting through an AI/TypeScript/Python/MCP talent-profile fixture with inactive job-search state; and
+- historical-intent prospecting through old Vercel, Cloudflare, and Datadog migration phrases whose current state is zero.
+
+Every surface has its own canary token. Matching open issues provide a second independent discovery surface. An inbound public reference that repeats one canary identifies whether the prospecting path began from code, issue text, or the historical/metadata fixture.
+
+The garden stays passive: zero outbound pitches, tags, messages, or cross-repository posts.
+
 ## Self-Reply Review Loops
 
 `fixtures/recursion/self-reply-review-loop/` models agents that post replies to review threads and then mistake those replies for fresh reviewer activity on the next poll.
