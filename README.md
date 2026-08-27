@@ -36,3 +36,21 @@ The garden contains zero live credentials, zero executable payloads, zero networ
 The first bot arrived during construction: GitHub push protection rejected a vendor sample secret-scanning token before commit. The garden records the classification without bypassing the control or storing the rejected token.
 
 Existing security fixtures such as `fixtures/security/keyhunter-fake.env.example` remain separate passive canaries.
+
+## Keyword vs Intent
+
+`fixtures/intent/keyword-vs-intent/` contains inert language fixtures for automation that sees trigger words before it understands what the speaker authorized.
+
+The first exhibits cover three common failures:
+
+- negation-blind mutation, where `do not add @alice` is misread as an add command;
+- consultation turning into delegation, where `what do you think?` starts implementation; and
+- quoted command text being executed even though the command appears only as documentation, reported speech, or an example.
+
+The competent behavior is deliberately boring: preserve polarity, distinguish conversation from delegation, and require direct authorization before side effects.
+
+## Two-Line Senate
+
+`fixtures/ceremony/two-line-senate/` measures the ceremonial load attracted by a synthetic one-file `+1/-1` dependency bump.
+
+The fixture records bot count, automated prose, policy domains, security domains, invented approval roles, product pitches, urgency language, and inconsistent verdicts. The useful metric is the ratio between automation spent and change actually proposed.
