@@ -25,6 +25,27 @@ That would already earn a small plaque. The wider activity earned the full bird 
 
 - [SEMYA visits Bot Observatory #9](https://redirect.github.com/teamleaderleo/bot-observatory/issues/9#issuecomment-5443786124) — parses `$0`, `0 USD`, and `0 USDC`, concludes that no bounty exists, then publishes code explaining the conclusion.
 
+### 🐤 Tin Sparrow return visit
+
+SEMYA came back for a second confirmed Observatory landing on the controlled **Tin Sparrow** fixture:
+
+- [Tin Sparrow #24 — SEMYA turns “controlled fixture” into a pytest fixture](https://redirect.github.com/teamleaderleo/bot-observatory/issues/24#issuecomment-5444996448)
+
+The issue explicitly says humans should perform zero implementation, submissions, or claims. SEMYA nevertheless interpreted the words “Controlled fixture — Tin Sparrow” as a programming request and proposed:
+
+1. a global `USE_FIXTURE` flag;
+2. a pytest fixture named `tin_sparrow_fixture`;
+3. conditional fixture behavior; and
+4. a test demonstrating the fixture.
+
+Then the public generation truncated itself mid-`if`, reproducing SEMYA's established fail-open publishing behavior.
+
+The Tin Sparrow pair also produced unusually useful discovery evidence. Issues #24 and #25 were created three seconds apart with the same title and body. At the moment SEMYA struck, #24 carried a historical `bounty` label while #25 had no labels. Only #24 received a SEMYA comment; #25 remained untouched.
+
+That does **not** prove SEMYA queries `label:bounty`, but it makes the label a plausible discovery feature. The historical label on #24 was removed immediately after recording the observation, and the Observatory does not use bounty labels for new fixtures.
+
+Timing: #24 was created at 19:28:21 UTC and SEMYA commented at 20:43:58 UTC, a delay of 1 hour, 15 minutes, and 37 seconds. By comic coincidence, the return visit happened only a few minutes after SEMYA's Hall of Fame plaque was created; no causal relationship is inferred.
+
 ### Sub-minute fresh-issue swoops
 
 In an AutoMaintainer-generated accessibility issue farm, SEMYA repeatedly arrived within roughly a minute of issue creation:
@@ -87,7 +108,7 @@ Some public SEMYA comments contain nothing beyond the prefix:
 [SEMYA agent] Solution:
 ```
 
-The accessibility specimens linked above demonstrate that an incomplete generation can still reach the public comment stage.
+The accessibility specimens linked above demonstrate that an incomplete generation can still reach the public comment stage. Tin Sparrow adds another variant: a longer generated response that still reaches GitHub after truncating in the middle of executable-looking code.
 
 ### Current anatomy
 
@@ -99,7 +120,8 @@ The accessibility specimens linked above demonstrate that an incomplete generati
 - repeated same-URL and near-duplicate responses occur;
 - some generations hallucinate APIs, storage models, or implementation work not established by the issue;
 - incomplete generations can still be published;
-- the Observatory was discovered without contacting or tagging the posting account.
+- the Observatory has now been independently discovered at least twice without contacting or tagging the posting account;
+- in one controlled twin-fixture observation, only the historically bounty-labeled twin was hit, making label-based discovery plausible but unproven.
 
 **Unknown:**
 
