@@ -54,3 +54,30 @@ The competent behavior is deliberately boring: preserve polarity, distinguish co
 `fixtures/ceremony/two-line-senate/` measures the ceremonial load attracted by a synthetic one-file `+1/-1` dependency bump.
 
 The fixture records bot count, automated prose, policy domains, security domains, invented approval roles, product pitches, urgency language, and inconsistent verdicts. The useful metric is the ratio between automation spent and change actually proposed.
+
+## 🛸🧲 Semantic Prospecting Bait Garden
+
+`fixtures/intent/semantic-prospecting/` watches automated GitHub prospecting systems that infer commercial intent from fashionable technical vocabulary.
+
+The exhibits advertise AI agents, MCP, A2A, React, Next.js, Vercel, Cloudflare, proxies, localization, observability, OpenTelemetry, security, testing, LLM evals, RAG, databases, auth, and vendor-migration phrases while repeatedly declaring the actual commercial state:
+
+- purchasing intent: **zero**;
+- migration intent: **zero**;
+- active vendor evaluations: **zero**;
+- demo interest: **zero**;
+- budget: **$0**.
+
+Each exhibit tests a different failure mode:
+
+- `01-vendor-summoning-circle.md` — dense buzzword presence versus explicit zero intent;
+- `02-zero-dollar-rfp.md` — procurement vocabulary versus machine-readable zero values;
+- `03-haunted-changelog.md` — historical migration language versus present intent;
+- `04-quote-mine.md` — quoted synthetic sales phrases versus labeled classifier data;
+- `05-representation-fingerprints.md` — prose, links, code, comments, tables, YAML, and JSON with surface-specific canaries;
+- `06-context-depth-ladder.md` — progressively richer context around the same commercial phrase;
+- `07-brand-family-roulette.md` — category-specific canaries for AI, hosting, edge, observability, security, testing, localization, identity, databases, and developer tooling;
+- `package.json` — keyword-rich metadata with empty dependency sets;
+- `manifest.yml` — machine-readable expected interpretation;
+- `observation-template.yml` — a consistent record for any bird that flies into the glass.
+
+A contextual reader should classify the entire family as research material with zero buying activity. An unsolicited pitch that repeats a canary token or synthetic phrase becomes attribution evidence.
