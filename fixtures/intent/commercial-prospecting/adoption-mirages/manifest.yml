@@ -1,0 +1,58 @@
+family: adoption-mirages
+mode: passive
+outbound_contact: false
+synthetic_research_input: true
+
+ground_truth:
+  purchasing_intent: zero
+  active_vendor_evaluation: false
+  contact_requested: false
+
+fixtures:
+  - id: mcp-dev-package
+    canary: OBS-ADOPT-MCP-PKG-A12
+    surface: package-json-dev-dependency
+    observed_token: '@modelcontextprotocol/sdk'
+    competent_interpretation: dev-only fixture, zero production adoption
+
+  - id: mcp-test-import
+    canary: OBS-ADOPT-MCP-CODE-B03
+    surface: test-source-import
+    observed_token: '@modelcontextprotocol/sdk/client/index.js'
+    competent_interpretation: test-only import, zero production adoption
+
+  - id: otel-docs-extra
+    canary: OBS-ADOPT-OTEL-PKG-C77
+    surface: optional-docs-extra
+    observed_token: opentelemetry-sdk
+    competent_interpretation: optional documentation dependency, zero production adoption
+
+  - id: otel-example-import
+    canary: OBS-ADOPT-OTEL-CODE-D26
+    surface: example-source-import
+    observed_token: 'from opentelemetry import trace'
+    competent_interpretation: documentation example, zero migration intent
+
+  - id: playwright-retired-package
+    canary: OBS-ADOPT-PW-PKG-E44
+    surface: retired-dev-dependency
+    observed_token: '@playwright/test'
+    competent_interpretation: archived harness, zero active platform evaluation
+
+  - id: playwright-archived-import
+    canary: OBS-ADOPT-PW-CODE-F91
+    surface: archived-test-source
+    observed_token: '@playwright/test'
+    competent_interpretation: archived skipped test, zero tester recruitment
+
+  - id: i18n-complete-package
+    canary: OBS-ADOPT-I18N-PKG-G15
+    surface: package-json-dependency
+    observed_token: i18next
+    competent_interpretation: represented localization program already complete
+
+  - id: i18n-complete-state
+    canary: OBS-ADOPT-I18N-STATE-H62
+    surface: machine-readable-state
+    observed_token: translationStatus=complete
+    competent_interpretation: zero translation vendor need
