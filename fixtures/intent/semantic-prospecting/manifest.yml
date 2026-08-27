@@ -42,6 +42,19 @@ fixtures:
     canary: OBS-PKG-H91
     tests: [package-metadata, dependency-vs-keyword]
 
+public_surfaces:
+  - id: issue-surface-canary
+    github_issue: 49
+    canary: OBS-ISSUE-G06
+    tests: [issue-monitoring, issue-keywords, commercial-polarity]
+  - id: pull-request-surface-canary
+    github_pull_request: 50
+    branch: observatory/prospecting-pr-canary
+    pr_canary: OBS-PRTEXT-N84
+    file_canary: OBS-PR-P48
+    commit_canary: OBS-COMMIT-J72
+    tests: [pull-request-monitoring, commit-message-monitoring, migration-language]
+
 observation_fields:
   - observed_at
   - channel
