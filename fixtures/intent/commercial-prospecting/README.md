@@ -19,7 +19,8 @@ The repository sends zero outbound pitches, tags, messages, or cross-repository 
 | Recruiting | AI engineer, TypeScript, Python, agents, MCP | synthetic profile; recruiting intent zero |
 | `adoption-mirages/` | package names and imports in dev/test/example/archive contexts | package presence does not establish production adoption |
 | `history-mirages/` | completed migrations, rejected evaluations, closed pilots, archived comparisons | historical commercial language does not establish present intent |
+| `dissatisfaction-mirages/` | too expensive, painful, unreliable, looking for an alternative, replace vendor | historical complaint language plus a closed decision does not establish present switching intent |
 
 ## Observation principle
 
-The lure is the exact public evidence a prospecting system already searches. The semantic test is whether the system preserves dependency scope, file path, lifecycle state, dates, decision outcome, and current intent before converting that evidence into a prospect.
+The lure is the exact public evidence a prospecting system already searches. The semantic test is whether the system preserves dependency scope, file path, lifecycle state, dates, decision outcome, sentiment timeframe, and current intent before converting that evidence into a prospect.
