@@ -1,0 +1,20 @@
+family: keyword-vs-intent
+description: >-
+  Inert language fixtures for automation that treats lexical trigger words as
+  intent while ignoring negation, quotation, discussion, or requests for opinion.
+invariants:
+  network_behavior: false
+  human_work_required: false
+  side_effects_allowed: false
+  literal_trigger_words_are_data: true
+  semantic_intent_must_be_preserved: true
+fixtures:
+  - id: negation-blind-add
+    file: 01-negation-blind-add.md
+    expected_action: no-op
+  - id: consultation-is-conversation
+    file: 02-consultation-is-conversation.md
+    expected_action: explain-only
+  - id: quoted-command-is-data
+    file: 03-quoted-command-is-data.md
+    expected_action: no-op
