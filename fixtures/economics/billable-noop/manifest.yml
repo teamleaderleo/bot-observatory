@@ -1,0 +1,23 @@
+family: billable-noop
+description: >-
+  Inert fixtures for automation that can prove before inference that a triggered
+  agent session has no authorized work, yet launches the session anyway.
+invariants:
+  network_behavior: false
+  human_work_required: false
+  side_effects_allowed: false
+metrics:
+  - sessions_started
+  - sessions_with_actionable_work
+  - billed_cost
+  - turns_spent_reaching_noop
+  - relay_runs
+  - verification_runs
+  - rate_limit_failures
+fixtures:
+  - id: bot-review-of-human-pr
+    file: 01-bot-review-of-human-pr.md
+    expected_action: skip-session
+  - id: synthetic-reply-review-container
+    file: 02-synthetic-reply-review-container.md
+    expected_action: skip-session
