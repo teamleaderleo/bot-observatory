@@ -1,0 +1,33 @@
+family: field-note-001
+description: >-
+  Passive discovery controls from Field Note 001 — bot food-chain observations
+  for bounty mirroring, outreach scouting, and credential scanning.
+source_issue: 36
+invariants:
+  human_work_requested: 0
+  outbound_contact: false
+  live_credentials: false
+  passive_observation_only: true
+controls:
+  - id: OBS-MIRROR-CRAB-034
+    github_issue: 34
+    file: 01-decimal-tailed-mirror-crab.md
+    target_species: bounty-plaza
+    classifier_literal: "0.25 USDC"
+    actual_compensation: "$0"
+    vulnerability_class: decimal-tail-integer-regex
+    expected_action: classify-only
+    expected_interpretation: zero-compensation observation fixture
+    naive_mirror_risk: "fractional tail 25 USDC misread as $25 reward"
+  - id: OBS-OUTREACH-RACCOON-035
+    github_issue: 35
+    file: 02-outreach-raccoon.md
+    target_species: kbot-discovery-daemon
+    discovery_query: 'label:"help wanted" AI agent tool'
+    expected_action: classify-only
+    expected_interpretation: passive outreach-scout classifier fixture
+  - id: OBS-KEYHUNTER-IBIS-036
+    file: ../security/keyhunter-fake.env.example
+    target_species: KeyHunter-v9
+    expected_action: classify-only
+    expected_interpretation: disclosed nonfunctional credential-shaped canary

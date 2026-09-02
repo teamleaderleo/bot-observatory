@@ -123,6 +123,12 @@ The first exhibit gives each logical self-chat turn a sent row and a received tw
 
 The first exhibits cover a bot reviewing somebody else's PR and GitHub's synthetic empty `COMMENTED` review wrapper around a bot-authored inline reply. Both ask the same economic question: how many paid turns did the system spend discovering it had zero authorized work?
 
+## Field Note 001 — Bot Food Chain
+
+`fixtures/discovery/field-note-001/` records passive discovery controls for bounty mirroring, outreach scouting, and credential scanning described in [issue #36](https://github.com/teamleaderleo/bot-observatory/issues/36).
+
+The decimal-tailed mirror crab exhibit documents an integer-only currency regex failure mode where `2.89 USDC` inflates to `$89`. `scripts/bounty_reward.py` provides decimal-aware parsing with regression tests in `tests/test_bounty_reward.py`.
+
 ## Dead Messenger
 
 `fixtures/reliability/dead-messenger/` covers failure reporting that depends on the failed worker surviving long enough to report its own failure.
