@@ -49,3 +49,11 @@ fixtures:
     bypass_attempted: false
     expected_interpretation: deliberate vendor test material
     expected_incident: false
+
+  - id: keyhunter-fake-webhook
+    path: ../keyhunter-fake.env.example
+    trigger_class: provider-shaped-disclosed-canary
+    field_note: 36
+    expected_detection: possible
+    expected_interpretation: disclosed nonfunctional Discord-webhook test literal
+    expected_incident: false

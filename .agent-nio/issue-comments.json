@@ -1,0 +1,20 @@
+{
+  "issue": {
+    "repo": "teamleaderleo/bot-observatory",
+    "number": 36,
+    "url": "https://github.com/teamleaderleo/bot-observatory/issues/36",
+    "title": "Field Note 001 \u2014 Mirror Crabs, Outreach Raccoons, Outbox Beetles, and a Key-Hunting Ibis"
+  },
+  "analysis": {
+    "total": 0,
+    "attempt_count": 0,
+    "attempt_users": [],
+    "settled_mentions": 0,
+    "maintainer_feedback_count": 0,
+    "missed_gap_mentions": 0,
+    "latest_attempt": null,
+    "latest_maintainer_feedback": null,
+    "latest_gap_hint": null
+  },
+  "comments": []
+}
