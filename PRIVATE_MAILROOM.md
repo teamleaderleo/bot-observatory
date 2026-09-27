@@ -82,6 +82,8 @@ personal_addresses_public: false
 
 ### Keeper note
 
+You built a bird feeder, and a bird flew straight into the glass.
+
 The public enclosures caught birds on GitHub first.
 
 This one found the mail slot.
