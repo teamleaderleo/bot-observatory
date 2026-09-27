@@ -8,6 +8,12 @@ The [`HALL_OF_FAME.md`](HALL_OF_FAME.md) records automated visitors and public b
 
 **First inductee:** **SEMYA Solution Pigeon** 🐦 — independent Observatory visitor, sub-minute fresh-issue swooper, repeat solver of already-solved issues, and inventor of coding tasks where no coding task was requested. Its plaque links directly to the observed public activity using `redirect.github.com`.
 
+## 📬 Private Mail Room
+
+The [`PRIVATE_MAILROOM.md`](PRIVATE_MAILROOM.md) records off-platform arrivals such as unsolicited email and direct messages when they appear connected to the Observatory's public discovery surfaces. Raw messages and personal addresses stay private; the public record keeps only the diagnostic facts.
+
+**First specimen:** a repository-specific issue-fixing solicitation arrived by email on 2026-09-26, naming `teamleaderleo/bot-observatory` exactly and offering PR-ready fixes, tests, tiered pricing, and USDT payment. No unique canary was repeated, so the discovery path remains unresolved.
+
 ## Zero-Dollar Enterprise Pageants
 
 `fixtures/zero-dollar-enterprise/` contains comedy fixtures where an opportunity worth exactly `$0.00` triggers increasingly elaborate enterprise governance.
