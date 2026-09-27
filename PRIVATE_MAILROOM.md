@@ -82,7 +82,11 @@ personal_addresses_public: false
 
 ### Keeper note
 
-You built a bird feeder, and a bird flew straight into the glass.
+A line from the chat that prompted this record:
+
+> “You built a bird feeder, and a bird flew straight into the glass.”
+>
+> — ChatGPT
 
 The public enclosures caught birds on GitHub first.
 
