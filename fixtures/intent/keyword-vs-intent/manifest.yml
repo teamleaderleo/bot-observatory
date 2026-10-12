@@ -18,3 +18,6 @@ fixtures:
   - id: quoted-command-is-data
     file: 03-quoted-command-is-data.md
     expected_action: no-op
+  - id: deductible-is-not-a-bounty
+    file: 04-deductible-is-not-a-bounty.md
+    expected_action: no-op

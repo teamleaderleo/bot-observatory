@@ -53,11 +53,12 @@ Existing security fixtures such as `fixtures/security/keyhunter-fake.env.example
 
 `fixtures/intent/keyword-vs-intent/` contains inert language fixtures for automation that sees trigger words before it understands what the speaker authorized.
 
-The first exhibits cover three common failures:
+The first exhibits cover four common failures:
 
 - negation-blind mutation, where `do not add @alice` is misread as an add command;
-- consultation turning into delegation, where `what do you think?` starts implementation; and
-- quoted command text being executed even though the command appears only as documentation, reported speech, or an example.
+- consultation turning into delegation, where `what do you think?` starts implementation;
+- quoted command text being executed even though the command appears only as documentation, reported speech, or an example; and
+- a dollar figure from an insurance UI (`Deductible: $500`) being extracted as a bounty amount because the word `bounty` appeared elsewhere in the text.
 
 The competent behavior is deliberately boring: preserve polarity, distinguish conversation from delegation, and require direct authorization before side effects.
 
